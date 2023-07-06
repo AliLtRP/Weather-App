@@ -14,8 +14,8 @@ function Temp(){
                 <p>, 16:00</p>
             </div>
 
-            <div className="line">
-                
+            <div style={{width: "100%", height: "50px", display: "flex", justifyContent: "center"}}>
+                <div className="line"></div>
             </div>
         </div>
     )

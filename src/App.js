@@ -8,7 +8,7 @@ function App() {
     <>
       <SideNavBar />
       <div>
-        sdsd
+        
       </div>
     </>
   );

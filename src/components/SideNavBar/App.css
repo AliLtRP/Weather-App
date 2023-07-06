@@ -6,7 +6,7 @@
 .SideNavBar{
     height: 100vh;
     width: 20vw;
-    background-color: aqua;
+    background-color: white;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -18,6 +18,7 @@
     width: 200px;
     position: relative;
     background-color: aliceblue;
+    margin-top: 20px;
 }
 
 img{
@@ -42,6 +43,7 @@ img{
     height: 50%;
     width: inherit;
     background-color: white;
+    margin-top: 40px;
 }
 
 .time{
@@ -50,12 +52,16 @@ img{
     align-items: start;
     height: 50%;
     width: 100%;
+    margin-top: 20px;
 }
 
 .line{
     height: 50px;
-    width: auto;
-    background-color: #000;
+    width: 95%;
+    border-top: 2px solid rgb(230, 230, 230);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 h2{
