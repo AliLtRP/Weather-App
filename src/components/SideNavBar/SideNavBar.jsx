@@ -1,16 +1,18 @@
-import './App.css'
+import './App.css';
+import Status from './Status';
 import Temp from './TempDegree';
 import Img from './WeatherStatusImg';
 
-function SideNavBar(){
+function SideNavBar() {
 
-    return(
-        <>
-            <div className="SideNavBar">  
-            <Img />
-            <Temp />
+    return (
+        <div className='nav'>
+            <div className="SideNavBar">
+                <Img />
+                <Temp />
+                <Status />
             </div>
-        </>
+        </div>
     )
 }
 

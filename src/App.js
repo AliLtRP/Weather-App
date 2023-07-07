@@ -7,9 +7,6 @@ function App() {
   return (
     <>
       <SideNavBar />
-      <div>
-        
-      </div>
     </>
   );
 }
