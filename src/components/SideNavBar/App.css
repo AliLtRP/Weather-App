@@ -1,145 +1,144 @@
-*{
-    margin: 0%;
-    width: 0%;
+* {
+  margin: 0%;
+  width: 0%;
 }
 
-.nav{
-    height: 100vh;
-    width: 22vw;
-    background-color: white;
+.nav {
+  height: 100vh;
+  width: 22vw;
 }
 
-.SideNavBar{
-    height: 100vh;
-    width: 20vw;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
+.SideNavBar {
+  height: 100vh;
+  width: 20vw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* img of weather*/
-.img{
-    height: 200px;
-    width: 200px;
-    position: relative;
-    background-color: aliceblue;
-    margin-top: 2em;
+.img {
+  height: 200px;
+  width: auto;
+  position: relative;
+  background-color: aliceblue;
+  margin-top: 2em;
 }
 
-img{
-    height: 200px;
-    width: 200px;
+img {
+  height: 200px;
+  width: 200px;
 }
 
 /* parent div */
 .temp {
-    height: 200px;
-    width: 200px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
+  height: 200px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
 }
 
 /* wraapper for degree and % */
-.wrapper{
-    width: 100%;
-    height: auto;
-    display: flex;
-    background-color: white;
-    margin-top: 2em;
-    margin-left: 1em;
+.wrapper {
+  width: auto;
+  height: auto;
+  display: flex;
+  margin-top: 2em;
+  margin-left: 1em;
 }
 
 /* only degree */
-.degree{
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    height: 100%;
-    width: 64px;
-    background-color: white;
+.degree {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  height: 100%;
+  width: 64px;
 }
 
-
-.time{
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    height: 50%;
-    width: 100%;
-    margin-top: 20px;
-    margin-left: 1em;
+.time {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  height: 50%;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 1em;
 }
 
 /* clock */
-.clock{
-    font-weight:normal;
-    color: rgb(172, 172, 171);
+.clock {
+  font-weight: normal;
+  color: rgb(172, 172, 171);
 }
 
 /* horizontal line */
 
-.line{
-    height: 50px;
-    width: 95%;
-    border-top: 2px solid rgb(230, 230, 230);
-    display: flex;
-    justify-content: start;
-    margin-top: 2.5em;
+.line {
+  height: 50px;
+  width: 95%;
+  border-top: 2px solid rgb(230, 230, 230);
+  display: flex;
+  justify-content: start;
+  margin-top: 2.5em;
 }
 
-h2{
-    display: inline-block;
-    height: auto;
-    width: auto;
+h2 {
+  display: inline-block;
+  height: auto;
+  width: auto;
 }
 
-p{
-    display: inline-block;
-    height: auto;
-    width: auto;
+p {
+  display: inline-block;
+  height: auto;
+  width: auto;
 }
 
 /* status */
 
-.status{
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    display: flex;
+.status {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
 }
 
-.statusWrapper{
-    height: 100%;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    margin-left: 2.5em;
-    margin-top: 2em;
+.statusWrapper {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-left: 2.5em;
+  margin-top: 2em;
 }
 
-.weatherStatus{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    width: 100%;
-    height: 20%;
-    background-color: white;
-    font-size: 18px;
-    font-weight: 200;
-    margin-left: 0.5em;
-    margin-bottom: 1em;
+.weatherStatus {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  height: 20%;
+  background-color: white;
+  font-size: 18px;
+  font-weight: 200;
+  margin-left: 0.5em;
+  margin-bottom: 1em;
 }
 
-.locationImg{
-    display: flex;
-    align-items: center;
-    height: 30%;
-    width: 100%;
+.locationImg {
+  display: flex;
+  align-items: center;
+  height: 30%;
+  width: 100%;
 }
+
+/* responsive nav */
+
+
