@@ -1,10 +1,81 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+  margin: 0%;
+  padding: 0%;
 }
 
-.Home{
-    height: 100vh;
-    width: 78vw;
-    background-color: aqua;
+.Home {
+  height: 100vh;
+  width: 78vw;
+  background-color: aqua;
+}
+
+/* header and about section */
+
+.header {
+  height: 80px;
+  width: 100%;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+}
+/* for all week days */
+.allWeek {
+  height: 8em;
+  width: 100%;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+}
+
+.wrap {
+  height: auto;
+  width: 80%;
+  display: flex;
+}
+
+.days {
+  height: auto;
+  width: 6.5em;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  margin: 5px;
+}
+
+.hlight {
+  height: calc(100vh - (8em + 100px));
+  width: auto;
+  background-color: purple;
+}
+
+.highlight {
+  width: 100%;
+  height: 8rem;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.widget {
+  height: 60vh;
+  width: 100%;
+  background-color: palegoldenrod;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row{
+  height: 45%;
+  width: 80%;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wid {
+  height: 180px;
+  width: 200px;
+  background-color: black;
+  border-radius: 10px 10px 10px 10px;
 }
