@@ -3,10 +3,12 @@
   padding: 0%;
 }
 
+body{
+  background-color: rgb(237, 236, 236);
+}
 .Home {
   height: 100vh;
   width: 78vw;
-  background-color: aqua;
 }
 
 /* header and about section */
@@ -14,15 +16,41 @@
 .header {
   height: 80px;
   width: 100%;
-  background-color: beige;
+  background-color: rgb(237, 236, 236);
   display: flex;
   justify-content: center;
 }
+
+/* home navbar */
+.homeNav {
+  height: inherit;
+  width: 80%;
+  display: flex;
+  justify-content: end;
+}
+
+.navWrap{
+  height: inherit;
+  width: 14em;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  justify-content: end;
+  grid-gap: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 26px;
+  font-weight: bold;
+}
+
 /* for all week days */
 .allWeek {
   height: 8em;
   width: 100%;
-  background-color: blue;
+  background-color: rgb(237, 236, 236);
   display: flex;
   justify-content: center;
 }
@@ -39,18 +67,43 @@
   background-color: white;
   border-radius: 10px 10px 10px 10px;
   margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.day{
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.weatherImg{
+  height: 60%;
+  width: 80%;
+  background-color: bisque;
+}
+
+.Headertemp{
+  width: auto;
+}
+
+.imgPro{
+  width: 100%;
+  height: 100%;
+}
+
+/* HighLights */
 .hlight {
   height: calc(100vh - (8em + 100px));
   width: auto;
-  background-color: purple;
 }
 
 .highlight {
   width: 100%;
   height: 8rem;
-  background-color: aliceblue;
+  background-color: rgb(237, 236, 236);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,23 +112,47 @@
 .widget {
   height: 60vh;
   width: 100%;
-  background-color: palegoldenrod;
+  /* background-color: palegoldenrod; */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.row{
+.row {
   height: 45%;
   width: 80%;
-  background-color: aqua;
+  /* background-color: aqua; */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 15px;
 }
 
 .wid {
   height: 180px;
   width: 200px;
-  background-color: black;
+  background-color: white;
   border-radius: 10px 10px 10px 10px;
+}
+
+.stat{
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* background-color: white; */
+}
+
+p {
+  margin-left: 10%;
+}
+
+.centerCon{
+  height: 60%;
+  width: auto;
+  background-color: red;
+}
+
+.foot {
+  height: 20%;
+  width: auto;
 }
