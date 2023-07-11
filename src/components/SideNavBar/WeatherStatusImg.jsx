@@ -1,10 +1,10 @@
 import './App.css';
 
-function Img(){
+function Img( { icon } ){
 
     return(
         <div className='img'>
-            <img src="/WeatherStatus/cloud.jpg" alt="" />
+            <img src={`https://openweathermap.org/img/wn/${icon}.png`} alt="" />
         </div>
     )
 }

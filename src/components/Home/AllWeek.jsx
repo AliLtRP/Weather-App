@@ -1,5 +1,5 @@
 
-function All() {
+function All( {temp} ) {
 
     return (
         <div className="allWeek">
@@ -13,7 +13,7 @@ function All() {
                         <img src="WeatherStatus/cloud.jpg" alt="" className="imgPro"/>
                     </div>
 
-                    <div className="Headertemp">15 C</div>
+                    <div className="Headertemp">{String(temp - 273.15).slice(0,5)} C</div>
                 </div>
                 <div className="days">
                     <div className="day">
@@ -24,7 +24,7 @@ function All() {
                         <img src="WeatherStatus/cloud.jpg" alt="" className="imgPro"style={{width: "inhert"}}/>
                     </div>
 
-                    <div className="Headertemp">15 C</div>
+                    <div className="Headertemp">{String(temp - 273.15).slice(0,5)} C</div>
                 </div>
                 <div className="days">
                     <div className="day">
@@ -35,7 +35,7 @@ function All() {
                         <img src="WeatherStatus/cloud.jpg" alt="" className="imgPro"style={{width: "inhert"}}/>
                     </div>
 
-                    <div className="Headertemp">15 C</div>
+                    <div className="Headertemp">{String(temp - 273.15).slice(0,5)} C</div>
                 </div>
                 <div className="days">
                     <div className="day">
@@ -46,7 +46,7 @@ function All() {
                         <img src="WeatherStatus/cloud.jpg" alt="" className="imgPro"style={{width: "inhert"}}/>
                     </div>
 
-                    <div className="Headertemp">15 C</div>
+                    <div className="Headertemp">{String(temp - 273.15).slice(0,5)} C</div>
                 </div>
                 <div className="days">
                     <div className="day">
@@ -57,7 +57,7 @@ function All() {
                         <img src="WeatherStatus/cloud.jpg" alt="" className="imgPro"style={{width: "inhert"}}/>
                     </div>
 
-                    <div className="Headertemp">15 C</div>
+                    <div className="Headertemp">{String(temp - 273.15).slice(0,5)} C</div>
                 </div>
                 <div className="days">
                     <div className="day">
@@ -68,7 +68,7 @@ function All() {
                         <img src="WeatherStatus/cloud.jpg" alt="" className="imgPro"style={{width: "inhert"}}/>
                     </div>
 
-                    <div className="Headertemp">15 C</div>
+                    <div className="Headertemp">{String(temp - 273.15).slice(0,5)} C</div>
                 </div>
                 <div className="days">
                     <div className="day">
@@ -79,7 +79,7 @@ function All() {
                         <img src="WeatherStatus/cloud.jpg" alt="" className="imgPro"style={{width: "inhert"}}/>
                     </div>
 
-                    <div className="Headertemp">15 C</div>
+                    <div className="Headertemp">{String(temp - 273.15).slice(0,5)} C</div>
                 </div>
             </div>
 

@@ -1,7 +1,7 @@
 import './App.css';
 import Wid from './Widgets';
 
-function Highlight(){
+function Highlight( {res} ){
 
     return(
         <div className='hlight'>
@@ -9,7 +9,7 @@ function Highlight(){
                 <h1 style={{display: "inline", height: "auto", width: "80%"}}>Today's Highlights</h1>
             </div>
 
-            <Wid />
+            <Wid res={res}/>
         </div>
     )
 }

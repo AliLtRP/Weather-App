@@ -1,12 +1,20 @@
+import moment from "moment";
 
+function Temp( { temp, time , timezone} ) {
+    let day = new Date(time*1000);
 
-function Temp() {
+    const dayOfWeek = ["Sunday", "Monday", "Tuesday", "Wendsday", "Thursday", "Friday"];
+    
+    console.log(day.getDay());
+
+    let tz = timezone/60;
+    let currentTime = moment().utcOffset(tz).format("h:mm A");
 
     return (
         <div className="temp">
             <div className="wrapper">
                 <div className="degree">
-                    <h1 className='h1' style={{ backgroundColor: 'white', fontSize: 62 }}>12</h1>
+                    <h1 className='h1' style={{ backgroundColor: 'white', fontSize: 62 }}>{String(temp-273.15).slice(0,5)}</h1>
                 </div>
 
                 <div>
@@ -15,8 +23,8 @@ function Temp() {
             </div>
 
             <div className="time">
-                <h2>Monday</h2>
-                <h2 className="clock">,16:00</h2>
+                <h2>{dayOfWeek[day.getDay()]}</h2>
+                <h2 className="clock">,{currentTime}</h2>
             </div>
 
             <div style={{ width: "100%", height: "50px", display: "flex", justifyContent: "center" }}>

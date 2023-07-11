@@ -1,13 +1,13 @@
 import './App.css';
 
-function Status(){
-
+function Status( { weather } ){
+    console.log(weather);
     return(
         <div className='status'>
             <div className="statusWrapper">
                 
                 <div className="weatherStatus">
-                    <p>cloudy</p>
+                    <p>{weather}</p>
                     <p>Rain - 30%</p>
                 </div>
                 
