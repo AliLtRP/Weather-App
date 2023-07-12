@@ -1,4 +1,6 @@
 import moment from "moment";
+import Img from "./WeatherStatusImg";
+import './App.css';
 
 function Temp( { temp, time , timezone} ) {
     let day = new Date(time*1000);
@@ -14,11 +16,11 @@ function Temp( { temp, time , timezone} ) {
         <div className="temp">
             <div className="wrapper">
                 <div className="degree">
-                    <h1 className='h1' style={{ backgroundColor: 'white', fontSize: 62 }}>{String(temp-273.15).slice(0,5)}</h1>
+                    <h2 className='h1' style={{ backgroundColor: 'white', fontSize: "32px", width: "50%" }}>{String(temp-273.15).slice(0,5)}</h2>
                 </div>
 
                 <div>
-                    <img className='i' src="WeatherStatus/celsius-svgrepo-com.svg" alt="" style={{ height: 40, width: 50 }} />
+                    <img className='i' src="WeatherStatus/celsius-svgrepo-com.svg" alt="" style={{ height: 25, width: 25 }} />
                 </div>
             </div>
 

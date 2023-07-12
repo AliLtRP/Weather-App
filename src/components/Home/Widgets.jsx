@@ -1,12 +1,13 @@
 import './App.css';
+import './wid.css';
 
-function Wid( {res} ) {
+function Wid({ res }) {
 
-    let sunrise = new Date(res.sys.sunrise*1000);
-    let sunset = new Date(res.sys.sunset *1000);
+    let sunrise = new Date(res.sys.sunrise * 1000);
+    let sunset = new Date(res.sys.sunset * 1000);
 
-    
-    console.log(sunrise.getDay() +" day");
+
+    console.log(sunrise.getDay() + " day");
     return (
         <div className="widget">
             <div className="row">
@@ -18,32 +19,37 @@ function Wid( {res} ) {
                     </div>
 
                     <div className="centerCon">
-                        {String(res.main.temp_max).slice(0,5) +" C"} <br/>
-                        {String(res.main.temp_min).slice(0,5) +" C"}
+                        <div className="tempH">
+                            {"Temp Max: " + String(res.main.temp_max).slice(0, 5) + " C"}
+                        </div>
+
+                        <div className="tempL">
+                            {"Temp Min: " + String(res.main.temp_min).slice(0, 5) + " C"}
+                        </div>
+
                     </div>
 
-                    <div className="foot">
-                        Normal
-                    </div>
+
                 </div>
 
                 {/* 2 */}
                 <div className="wid">
                     < div className="stat">
-                        <p>Wind Status</p>
+                        <p>WIND STATUS</p>
                     </div>
 
                     <div className="centerCon">
-                        {res.wind.speed} KM/h     
+
+                        <div className="speed">
+                            <p className='para'>{res.wind.speed}</p>
+                            <p>KM/h</p>
+                        </div>
 
                         <div className="deg">
-                            {res.wind.deg}    
-                        </div>            
+                            {res.wind.deg}
+                        </div>
                     </div>
 
-                    <div className="foot">
-                        Normal
-                    </div>
                 </div>
 
                 {/* 3 */}
@@ -53,13 +59,10 @@ function Wid( {res} ) {
                     </div>
 
                     <div className="centerCon">
-                        {sunrise.getHours() % 12+":"+sunrise.getMinutes()+"AM"} <br/>
-                        {sunset.getHours() % 12+":"+sunset.getMinutes()+"PM"}
+                        {sunrise.getHours() % 12 + ":" + sunrise.getMinutes() + "AM"} <br />
+                        {sunset.getHours() % 12 + ":" + sunset.getMinutes() + "PM"}
                     </div>
 
-                    <div className="foot">
-                        Normal
-                    </div>
                 </div>
             </div>
 
@@ -71,7 +74,7 @@ function Wid( {res} ) {
                         <p>HUMIDITY</p>
                     </div>
 
-                    <div className="centerCon">
+                    <div className="centerCor">
                         {res.main.humidity + "%"}
                     </div>
                     <div className="foot">
@@ -87,8 +90,8 @@ function Wid( {res} ) {
 
                     </div>
 
-                    <div className="centerCon">
-                        {res.visibility/1000 +"KM"}
+                    <div className="centerCor">
+                        {res.visibility / 1000 + "KM"}
                     </div>
                     <div className="foot">
                         Normal
@@ -103,7 +106,7 @@ function Wid( {res} ) {
 
                     </div>
 
-                    <div className="centerCon">
+                    <div className="centerCor">
                         {res.main.pressure + "hPa"}
                     </div>
                     <div className="foot">

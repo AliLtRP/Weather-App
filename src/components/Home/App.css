@@ -139,7 +139,6 @@ a{
   width: 100%;
   display: flex;
   align-items: center;
-  /* background-color: white; */
 }
 
 p {
@@ -147,9 +146,8 @@ p {
 }
 
 .centerCon{
-  height: 60%;
+  height: 80%;
   width: auto;
-  background-color: red;
 }
 
 .foot {

@@ -42,11 +42,11 @@ function App() {
     asyncFn();
   }, [lat, lon]);
 
-  console.log(lat);
+  console.log(res);
   return (
-    <div className='main'>   
-      {res ? <SideNavBar res={res}/>: null}
-      {res ? <Home res={res}/>: null}
+    <div className='main'>
+      {res ? <SideNavBar res={res} /> : null}
+      {res ? <Home res={res} /> : null}
     </div>
   );
 }
