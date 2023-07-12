@@ -4,12 +4,12 @@ import Header from './Header';
 import Hightlight from './Highlight';
 
 
-function Home( {res} ){
+function Home( {res, lat, lon} ){
 
     return(
         <div className='Home'>
             <Header />
-            <All temp={res.main.temp}/>
+            <All temp={res.main.temp} lat={lat} lon={lon}/>
             <Hightlight res={res}/>
         </div>
     )

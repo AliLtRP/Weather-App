@@ -4,6 +4,7 @@ import Home from './components/Home/Home';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
+
 function App() {
   const [city, setCity] = useState('baghdad');
   const [lat, setLat] = useState(0);
@@ -31,7 +32,7 @@ function App() {
 
     const asyncFn = async () => {
       try {
-        axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=fdfea805c327b7df7d8f8c3ac49bba07`)
+        await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=fdfea805c327b7df7d8f8c3ac49bba07`)
           .then(res => {
             setRes(res.data);
           })
@@ -42,11 +43,11 @@ function App() {
     asyncFn();
   }, [lat, lon]);
 
-  console.log(res);
+
   return (
     <div className='main'>
-      {res ? <SideNavBar res={res} /> : null}
-      {res ? <Home res={res} /> : null}
+      {res ? <SideNavBar res={res} city={setCity}/> : null}
+      {res ? <Home res={res} lat={lat} lon={lon}/> : null}
     </div>
   );
 }

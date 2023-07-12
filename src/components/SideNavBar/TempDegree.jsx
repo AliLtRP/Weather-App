@@ -6,8 +6,6 @@ function Temp( { temp, time , timezone} ) {
     let day = new Date(time*1000);
 
     const dayOfWeek = ["Sunday", "Monday", "Tuesday", "Wendsday", "Thursday", "Friday"];
-    
-    console.log(day.getDay());
 
     let tz = timezone/60;
     let currentTime = moment().utcOffset(tz).format("h:mm A");
