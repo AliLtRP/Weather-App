@@ -1,0 +1,21 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.homeNav {
+    height: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: end;
+  }
+  
+  .navWrap{
+    height: 100%;
+    width: 14em;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-content: end;
+    grid-gap: 20px;
+  }

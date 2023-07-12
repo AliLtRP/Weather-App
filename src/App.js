@@ -3,6 +3,8 @@ import SideNavBar from './components/SideNavBar/SideNavBar';
 import Home from './components/Home/Home';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Route, Routes } from 'react-router-dom';
+import AboutPage from './components/about/AboutPage';
 
 
 function App() {
@@ -46,8 +48,10 @@ function App() {
 
   return (
     <div className='main'>
-      {res ? <SideNavBar res={res} city={setCity}/> : null}
-      {res ? <Home res={res} lat={lat} lon={lon}/> : null}
+      <Routes>
+        {res ? <Route path='/' element={<Home res={res} lat={lat} lon={lon} city={setCity}/>}/> : null}
+        {res ? <Route path='/about' element={<AboutPage />}/> :null}
+      </Routes>
     </div>
   );
 }

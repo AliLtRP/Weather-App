@@ -14,11 +14,12 @@ body{
 /* header and about section */
 
 .header {
-  height: 80px;
+  height: 8%;
   width: 100%;
   background-color: rgb(237, 236, 236);
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 /* home navbar */
@@ -27,14 +28,16 @@ body{
   width: 80%;
   display: flex;
   justify-content: end;
+  align-items: start;
+  margin-bottom: 1em;
 }
 
 .navWrap{
-  height: inherit;
+  height: 100%;
   width: 14em;
   display: grid;
   grid-template-columns: repeat(2, auto);
-  align-items: center;
+  align-items: start;
   justify-content: end;
   grid-gap: 20px;
 }

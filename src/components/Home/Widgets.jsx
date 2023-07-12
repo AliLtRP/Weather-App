@@ -14,7 +14,7 @@ function Wid({ res }) {
         {/* 1 */}
         <div className="wid">
           <div className="stat">
-            <p style={{fontWeight: "200"}} >SEA & GROUND LEVEL</p>
+            <p style={{fontWeight: "200"}} >TEMP LEVEL</p>
           </div>
 
           <div className="centerCon">
@@ -40,7 +40,7 @@ function Wid({ res }) {
               <p>KM/h</p>
             </div>
 
-            <div className="deg">{res.wind.deg}</div>
+            <div className="deg">{res.wind.deg +"  Deg"}</div>
           </div>
         </div>
 
