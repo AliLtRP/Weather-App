@@ -1,5 +1,4 @@
 import HomeNav from "../Home/HomeNav";
-import { Link, Routes, Route, Outlet } from 'react-router-dom';
 import './App.css';
 
 function AboutPage() {
@@ -9,8 +8,8 @@ function AboutPage() {
             <div className="header">
                 <div className="homeNav">
                     <div className="navWrap">
-                        <Link to="/">Home</Link>
-                        <Link to="/about">About</Link>
+                        <a to="/">Home</a>
+                        <a to="/about">About</a>
                     </div>
                 </div>
             </div>

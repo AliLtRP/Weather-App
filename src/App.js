@@ -2,7 +2,6 @@ import './App.css';
 import Home from './components/Home/Home';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Route, Routes } from 'react-router-dom';
 import AboutPage from './components/about/AboutPage';
 
 
@@ -47,10 +46,7 @@ function App() {
 
   return (
     <div className='main'>
-      <Routes>
-        {res ? <Route path='/' element={<Home res={res} lat={lat} lon={lon} city={setCity}/>}/> : null}
-        {res ? <Route path='/about' element={<AboutPage />}/> :null}
-      </Routes>
+        {res ? <Home res={res} lat={lat} lon={lon} city={setCity}/> : null}
     </div>
   );
 }
