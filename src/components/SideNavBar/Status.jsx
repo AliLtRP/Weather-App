@@ -13,6 +13,7 @@ function Status( { weather } ){
                 <div className="locationImg">
                     <img src="/Location/baghdad.jpg" alt="" style={{width: "100%", height: "100%", borderRadius: "20px 20px 20px 20px"}}/>
                 </div>
+
             </div>
         </div>
     )

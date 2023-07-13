@@ -1,5 +1,4 @@
 import './App.css';
-import SideNavBar from './components/SideNavBar/SideNavBar';
 import Home from './components/Home/Home';
 import { useEffect, useState } from 'react';
 import axios from 'axios';

@@ -7,7 +7,11 @@ function Wid({ res }) {
 
   let pressure = res.main.pressure;
 
-  console.log(sunrise.getDay() + " day");
+  const style = {
+    transform: `rotate(${res.wind.deg}deg)`,
+    marginRight: '10px'
+  }
+
   return (
     <div className="widget">
       <div className="row">
@@ -40,7 +44,10 @@ function Wid({ res }) {
               <p>KM/h</p>
             </div>
 
-            <div className="deg">{res.wind.deg +"  Deg"}</div>
+            <div className="deg" >
+              <img src="sun/arrow-up.svg" alt="" style={style}/>
+              {res.wind.deg +"  Deg"}
+            </div>
           </div>
         </div>
 
